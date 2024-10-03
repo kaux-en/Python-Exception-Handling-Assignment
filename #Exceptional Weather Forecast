@@ -1,0 +1,20 @@
+#Task 1:Start
+#Task 2:Temperature Conversion
+
+def conversion():
+    
+    try:
+        user_input = float(input("Please enter the temperature (fahrenheit): "))
+        result = (user_input - 32) * 5 / 9
+        conversion = round(result, 2)
+        if user_input != float(user_input):
+                print("Value entered not a number.")
+    except ValueError:
+        print("Please enter a numeric value: ")
+    else: #Task 3:User Experience
+        print(f"{user_input} degrees Farenheit is {conversion} degrees Celsius.") 
+    #Task 4:Finally
+    finally:
+        print("Thank you for using our Weather forecast application!")
+
+conversion()
